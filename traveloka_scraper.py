@@ -80,14 +80,12 @@ def save_to_excel(data, nama_file):
     # Simpan ke file Excel
     df.to_excel(nama_file+".xlsx", index=False)
 
-if __name__ == "__main__":
-
+def main():
     # Input Link Review
     url = input("Masukkan link review (Traveloka): ")
 
     # Masukkan Nama File Hasil Scrapping
     nama_file = input("Masukkan Nama File Hasil Scraping: ")
-
     driver = init_driver()
 
     # Jalankan Proses Scraping
@@ -98,3 +96,6 @@ if __name__ == "__main__":
         # Tutup browser
         driver.quit()
         print("Scraping selesai! Semua ulasan telah disimpan")
+
+if __name__ == "__main__":
+    main()
