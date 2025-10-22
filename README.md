@@ -12,9 +12,17 @@ Mengambil username, ulasan, rating dan waktu dari kolom reviews lalu menyimpanny
 - BautifulSoup
 
 ### Cara Menggunakan
-- Install requirements.txt
+- Buat virtual environtment dan jalankan venv
+```bash
+python -m venv venv
+
+venv\Scripts\activate      #Windows
+source venv/bin/activate   #Linux & MacOS
 ```
-pip install requiements.txt -r
+
+- Install paket yang ada di requirements.txt
+```
+pip install -r requirements.txt
 ```
 
 - Jalankan program
